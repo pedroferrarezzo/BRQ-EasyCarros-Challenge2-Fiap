@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.1s;
+  font-family: 'Nunito', sans-serif;
+}
+
+*::selection {
+  background-color: rgb(0, 203, 180);
+}
+
+img::selection {
+  background-color: transparent;
+}
+
+:root {
+  --green-easy: rgb(0, 203, 180);
+  --gray-easy: rgb(33, 39, 48)
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+main {
+  height: 90%;
+}
+
+.container-fluid {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.13);
+  padding: 10px;
+}
+
+.my-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 3vmin;
+  background-color: var(--green-easy);
+  color: white;
+  height: 10%;
+}
+
+.offcanvas-body {
+  background-color: var(--gray-easy);
+}
+
+.nav-options {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 2.5vmin;
+  gap: 10px;
+}
+
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators{
+  filter: invert(100%);
+}
+
+.scale {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-right: 3px;
+  margin-right: 3px;
+  background-color: rgb(126, 124, 124);
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329);
+}
+
+.scale:hover {
+  transform: scale(1.1);
+}
+
+.scale-marker {
+  font-size: 1.2vmin;
+  text-align: right;
+  margin-bottom: -1px;
+  width: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  background-color: rgb(235, 235, 235);
+  width: 40vw;
+  height: 40vh;
+  margin: auto;
+  padding: 5vmin;
+  border-radius: 20px;
+  box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.151);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 493);
+}
+
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  color: white;
+  background-color: var(--green-easy);
+  margin-right: 10px;
+  border-radius: 10px;
+  font-size: 2vmin;
+  padding: 2px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.26);
+}
+
+.bar:hover {
+  transform: scale(1.1);
+}
+
+.legenda-grafico {
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.151);
+}
+
+.legenda-grafico:hover {
+  transform: scale(1.1);
+}
+
+
+.slide2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+.slide2-1 {
+  background-color: rgb(245, 246, 248);
+  width: 35%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.26);
+  padding: 1vmin;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.slide2-1 .legend-2-1 {
+  font-size: 2vmin;
+  font-weight: bold;
+}
+
+.slide2-1 img {
+  width: 60%;
+}
+
+.slide2-1 #name-car {
+  text-align: start;
+  padding-left: 2vmin;
+  font-size: 2vmin;
+  text-decoration: underline;
+}
+
+.slide2-icons {
+  display: flex;
+  background-color: rgb(221, 221, 221);
+  height: 100%;
+  gap: 1vmin;
+  width: 35%;
+  padding-left: 2vmin;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.26);
+  padding-top: 12px;
+}
+
+.slide2-2 {
+  display: grid;
+  background-color: rgb(234, 236, 240);
+  width: 35%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.26);
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 70% 30%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  grid-template-areas: "text1 text3"
+                       "text2 text3";
+}
+
+.text1 {
+  display: flex;
+  align-items: center;
+  grid-area: "text1";
+  width: 100%;
+  height: 100%;
+  text-align: start;
+  justify-content: center;
+  gap: 1vmin;
+  font-size: 1.8vmin;
+}
+
+.text2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: "text2";
+  width: 100%;
+  height: 100%;
+  gap: 1vmin;
+  font-size: 1.8vmin;
+}
+
+.text3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: "text3";
+  text-align: center;
+  width: 100%;
+  height: 200%;
+  font-size: 2vmin;
+  font-weight: 700;
+  text-decoration: overline;
+  color: rgb(44, 182, 125);
+
+}
+
+.fa-check {
+  color: rgb(44, 182, 125);
+  font-size: 2vmin;
+}
+
+#img-Toro {
+  width: 40%;
+}
+
+
+
+/* @media(max-width: 280px){
+  .chart{
+    width: 10vw;
+  }
+  .scale{
+    width: 12vw;
+  }
+  .scale-marker{
+    transform: scale(2);
+    padding-top: 10%;
+  }
+  .car-chart{
+    transform: rotate(90deg) scale(2);
+  }
+}
+
+@media(max-width: 414px){
+  .chart{
+    width: 70vw;
+  }
+  .scale-marker{
+    transform: scale(2.2);
+    padding-top: 50%;
+  }
+  .car-chart{
+    transform: rotate(90deg) scale(2);
+  }
+}
+*/
+
+@media(min-width: 320px){
+  .slide2{
+    transform: scale(1.5);
+  }
+}
+
+@media(max-width: 914px){
+  .chart{
+    width: 80%;
+  }
+  .scale{
+    width: 12%;
+  }
+  .scale-marker{
+    transform: scale(1);
+    padding-top: 10px;
+  }
+  .car-chart{
+    transform: rotate(90deg) scale(1.8);
+  }
+  .legenda-grafico{
+    transform: scale();
+  }
+}
+
+@media(min-width: 915px){
+  .chart{
+    width: 80%;
+  }
+  .scale{
+    width: 10%;
+  }
+  .scale-marker{
+    font-size: 72.62%;
+  }
+  .legenda-grafico{
+    transform: scale(1.2);
+  }
+  .fa-check{
+    margin-left: 40px;
+  }
+}
+/*
+@media(min-width: 969px),
+      (min-height: 969px){
+  .scale-marker{
+    transform: scale();
+  }
+}
+
+@media(min-width: 1320px){
+  .scale{
+    width: 10%;
+  }
+  .scale-marker{
+    width: 100%;
+  }
+}
+
+@media (max-height: 768px),
+        (max-width: 393px){
+  .chart{
+    width: 80vw;
+  }
+  .scale-marker{
+    transform: scale(1.8);
+    padding-top: 20%;
+  }
+  .car-chart{
+    transform: rotate(90deg) scale(2);
+  }
+}
+
+@media(max-height: 600px){
+  .chart{
+    width: 80vw;
+  }
+  .scale-marker{
+    transform: scale(1.5);
+    padding-top: 10%;
+  }
+  .car-chart{
+    transform: scale(1.5);
+  }
+}
+
+@media(max-height: 740px){
+  .chart{
+    width: 80vw;
+  }
+  .scale-marker{
+    transform: scale(1.5);
+    padding-top: 10%;
+  }
+  .car-chart{
+    transform: rotate(90deg) scale(1.5);
+  }
+}
+
+@media(min-height: 768px){
+  .car-chart{
+    font-size: 80%;
+  }
+}
+
+@media(max-height: 1024px){
+  .chart{
+    width: 80vw;
+  }
+  .scale-marker{
+    transform: scale(1.5);
+    padding-top: 10%;
+  }
+  .car-chart{
+    transform: scale(1.5);
+  }
+}
+
+@media(max-width: 1920px){
+  .chart{
+    width: 80%;
+    padding-bottom: 1px;
+  }
+  .scale-marker{
+    padding: px;
+    font-size: 0.5vw;
+  }
+} */

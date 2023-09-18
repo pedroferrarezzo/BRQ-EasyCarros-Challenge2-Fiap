@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboards</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Nunito&display=swap" rel="stylesheet">
+
+    
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Filtrar gráficos
+            </button>
+            
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 0">Faixa etária Mês</a></li>
+              <li><a class="dropdown-item" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 1">Carro mais alugado no último mês</a></li>
+              <li><a class="dropdown-item" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 2">Carro mais alugado para carreto</a></li>
+            </ul>
+          </div>
+  
+          <a class="navbar-brand" href="#"
+            >pedrog <i class="fa-regular fa-circle-user"></i
+          ></a>
+  
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="my-header">
+              <p class="offcanvas-title" id="offcanvasNavbarLabel">
+                DASHBOARDS
+              </p>
+            
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link nav-options" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Tela inicial</a>
+                  </a
+                  >
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link nav-options" href="#"
+                    ><i class="fa-solid fa-coins"></i> </i> Financeiro</a
+                  >
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link nav-options" href="#">
+                    <i class="fa-solid fa-users-rectangle"></i></i> Account
+                    Manager</a
+                  >
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link nav-options" href="dashboards.html">
+                    <i class="fa-solid fa-chart-simple"></i> Dashboards</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide w-100 h-100 d-flex align-items-center text-center">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner h-100 d-flex align-items-center">
+          <div class="carousel-item active">
+            <div class="legenda-grafico">
+              <h5>Categorias de aluguel de carro por faixa etária</h5>
+            </div>
+            <div class="chart">
+              
+              <div class="scale">
+                <div class="scale-marker"><p>> 83</p></div>
+                <div class="scale-marker"><p>73 a 83</p></div>
+                <div class="scale-marker"><p>62 a 72</p></div>
+                <div class="scale-marker"><p>51 a 61</p></div>
+                <div class="scale-marker"><p>40 a 50</p></div>
+                <div class="scale-marker"><p>29 a 39</p></div>
+                <div class="scale-marker"><p>18 a 28</p></div>
+                <div class="scale-marker"></div>
+              </div>
+
+              
+              <div class="bar" style="height: 90%"><p class="car-chart">Elétricos</p></div>
+              <div class="bar" style="height: 80%;"><p class="car-chart">PCDs</p></div>
+              <div class="bar" style="height: 50%;"><p class="car-chart">Executivos</p></div>
+              <div class="bar" style="height: 36%; font-size: 1.7vmin;"><p class="car-chart">Luxuosos</p></div>
+            </div>
+
+            
+
+            <div>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide2">
+
+              <div class="slide2-1">
+                  <p class="legend-2-1">Carro mais alugado no último mês</p>
+
+                  <img src="../images/Hilux.svg" alt="Toyota Hilux" title="Toyota Hilux">
+
+                  <p id="name-car">Toyota Hilux 4x4</p>
+              </div>
+
+              <div class="slide2-icons">
+                <p><i class="fa-solid fa-sitemap"></i> A/T</p>
+                <p><i class="fa-solid fa-users"></i> 5</p>
+                <p><span class="mdi mdi-car-door"></span> 4</p>
+                <p><i class="fa-regular fa-sun"></i> A/C</p>
+              </div>
+
+              <div class="slide2-2">
+                <p class="text1"><i class="fa-solid fa-check"></i> Ideal para serviços rurais</p>
+
+                <p class="text3">R$250 / Dia</p>
+      
+                <p class="text2"><i class="fa-solid fa-check"></i> 10% de desconto no plano de fidelidade</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide2">
+
+              <div class="slide2-1">
+                  <p class="legend-2-1">Carro mais alugado para carretos (30 dias)</p>
+
+                  <img src="../images/Toro.svg" alt="Fiat Toro" title="Fiat Toro" id="img-Toro">
+
+                  <p id="name-car">Fiat Toro</p>
+              </div>
+
+              <div class="slide2-icons">
+                <p><i class="fa-solid fa-sitemap"></i> A/T</p>
+                <p><i class="fa-solid fa-users"></i> 5</p>
+                <p><span class="mdi mdi-car-door"></span> 4</p>
+                <p><i class="fa-regular fa-sun"></i> A/C</p>
+              </div>
+
+              <div class="slide2-2">
+                <p class="text1"><i class="fa-solid fa-check"></i> Retire na agência mais próxima</p>
+
+                <p class="text3">R$250 / Dia</p>
+      
+                <p class="text2"><i class="fa-solid fa-check"></i> 10% de desconto no plano de fidelidade</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+    
+    
+
+  </body>
+</html>
