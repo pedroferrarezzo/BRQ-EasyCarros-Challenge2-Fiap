@@ -1,0 +1,199 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.nav-item{
+    align-items: end;
+    justify-content: center;
+    color: #0033CC;
+    display: flex;
+    margin-right: 10px;
+}
+/*inicio da reserva de veículos*/
+.alugar-carro{
+    display: flex;
+    background-color: #0033CC;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+}
+.obj-1{
+    width: 100%;
+    float: left;
+    margin-left: 10%;
+    height: 80%;
+}
+.row{
+    width: 57%;
+    float: left;
+    height: 80%;
+}
+.btn{
+    width: 19%;
+    float: left;
+    margin-right: 5%;
+    height: 80%;
+}
+/*inicio da descrição do programa Easy Club*/
+.apresentacao-do-programa{
+    display: flex;
+/*     width: 100%; */
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    height: 250px;
+}
+.logo-easyclub{
+    width: 30%;
+    align-items: center;
+}
+.programa-easy{ 
+    width: 70%;
+    margin-right: 15%;
+    align-items: center;
+}
+/*inicio dos níveis do Easy Club*/
+.niveis-easyclub{
+    justify-content: space-between;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 40px;
+}
+.nivel-1{
+    border-radius: 5px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+}
+.nivel-1-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0033CC;
+    padding: 10px;
+}
+.nivel-1-beneficio-1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.nivel-1-beneficio-2{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.nivel-1-beneficio-3{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.nivel-1-obs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94A1B2;
+    padding: 10px;
+}
+.nivel-2{
+    border-radius: 5px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+}
+.nivel-2-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0033CC;
+    padding: 10px;
+}
+.nivel-2-beneficio-1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.nivel-2-beneficio-2{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.nivel-2-beneficio-3{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.nivel-2-obs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94A1B2;
+    padding: 10px;
+}
+.nivel-3{
+    border-radius: 5px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+}
+.nivel-3-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0033CC;
+    padding: 10px;
+}
+.nivel-3-beneficio-1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.nivel-3-beneficio-2{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.nivel-3-beneficio-3{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.nivel-3-obs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94A1B2;
+    padding: 10px;
+}
+/*inicio rodape*/
+.rodape{
+    background-color: #0033CC;
+    height: 100px;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+.rodape-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5%;
+}
+.rodape-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5%;
+}
+/* .rodape-3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5%;
+} */
