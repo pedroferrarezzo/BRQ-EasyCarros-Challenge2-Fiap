@@ -1,0 +1,134 @@
+.body-perfil{
+    display:flex;
+    flex-direction:column;
+    width: 100vw;
+    height: 100vh;
+    row-gap: 10vmin;
+}
+
+.nav-item{
+    align-items: end;
+    justify-content: center;
+    color: #0033CC;
+    display: flex;
+    margin-right: 10px;
+    gap: 1vmin;
+}
+
+/*inicio da descrição do programa Easy Club*/
+.apresentacao-do-programa-pag-2{
+    display: flex;
+/*     width: 100%; */
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.logo-easyclub-pag-2{
+    width: 30%;
+    align-items: center;
+}
+.programa-easy-pag-2{ 
+    width: 70%;
+    margin-right: 15%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.sobre-easy-pag-2{
+    align-items: center;
+    display: flex;
+
+}
+/*inicio dos níveis do Easy Club*/
+.pontuacao-total-pag-2{
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.minha-pontuacao-pag-2{
+
+    justify-content: space-between;
+    width: 20%;
+}
+.categoria-atual-pag-2{
+    justify-content: space-between;
+    width: 20%;
+}
+
+.ola-nome{
+    display: flex;
+    color: #0033CC;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+
+.pontuacao-atual-pag-2{
+    display: flex;
+    color: black;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+
+}
+.pontuacao-pag-2{
+    display: flex;
+    color: #0033CC;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+.categoria-pag-2{
+    display: flex;
+    color: black;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+.categoria-beneficios-pag-2{
+    display: flex;
+    color: #0033CC;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+
+
+.nivel-2-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0033CC;
+    padding: 10px;
+}
+.nivel-2-beneficio-1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.nivel-2-beneficio-2{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.nivel-2-beneficio-3{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.nivel-2-obs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94A1B2;
+    padding: 10px;
+    margin: 0px;
+}
+
+

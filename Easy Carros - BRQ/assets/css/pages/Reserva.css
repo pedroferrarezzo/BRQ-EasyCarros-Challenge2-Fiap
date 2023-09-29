@@ -1,0 +1,106 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.body-reserva {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    align-items: end;
+    justify-content: center;
+    color: #0033CC;
+    display: flex;
+    margin-right: 10px;
+}
+
+/*inicio da reserva de veículos*/
+
+.obj-1 {
+    width: 100%;
+    float: left;
+    margin-left: 10%;
+    height: 80%;
+}
+
+.row {
+    width: 57%;
+    float: left;
+    height: 80%;
+}
+
+.btn {
+    width: 19%;
+    float: left;
+    margin-right: 5%;
+    height: 80%;
+}
+
+.alugar-carro-reserva {
+    display: flex;
+    background-color: #0033CC;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+/*inicio da descrição do programa Easy Club*/
+.minhas-reservas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 5vmin;
+    justify-content: center;
+    height: 100vh;
+}
+
+.reservas-reserva {}
+
+/*inicio rodape*/
+.rodape {
+
+    background-color: #0033CC;
+    height: 100px;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+.rodape-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.rodape-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5%;
+}
+
+/* .rodape-3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5%;
+} */
+
+.titulo-destaque-reserva {
+    width: 100%;
+}
+
+.programa-easy-reserva {
+    margin: 0px;
+}

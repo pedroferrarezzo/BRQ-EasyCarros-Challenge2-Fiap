@@ -40,6 +40,7 @@
 /*inicio da descrição do programa Easy Club*/
 .apresentacao-do-programa{
     display: flex;
+/*     width: 100%; */
     align-items: center;
     justify-content: space-between;
     margin-left: 10%;
@@ -49,7 +50,7 @@
     width: 30%;
     align-items: center;
 }
-.programa-easy{
+.programa-easy{ 
     width: 70%;
     margin-right: 15%;
     align-items: center;
@@ -60,7 +61,7 @@
     display: flex;
     margin-left: 10%;
     margin-right: 10%;
-    padding: 50px;
+    padding: 48px;
 }
 .nivel-1{
     border-radius: 5px;
@@ -172,8 +173,9 @@
 }
 /*inicio rodape*/
 .rodape{
+
     background-color: #0033CC;
-    height: 140px;
+    height: 100px;
     align-items: center;
     color: white;
     padding: 10px;
@@ -181,8 +183,8 @@
 .rodape-1{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-right: 5%;
-
 }
 .rodape-2{
     display: flex;
@@ -190,10 +192,27 @@
     align-items: center;
     margin-right: 5%;
 }
-.rodape-3{
+/* .rodape-3{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-right: 5%;
-    color: white;
+} */
+@media(max-width:1250px) {
+    .niveis-easyclub {
+        width: 48%;
+        justify-content: space-evenly;
+        margin: 20px 0;
+    }
+}
+@media(max-width:900px) {
+    .header {
+        justify-content: space-evenly;
+    }
+    .hero {
+        margin-top: 20px;
+    }
+    .solution-item {
+        width: 90%;
+    }
 }
