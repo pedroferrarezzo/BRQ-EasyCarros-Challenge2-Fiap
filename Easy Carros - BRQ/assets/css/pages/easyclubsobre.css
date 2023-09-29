@@ -61,7 +61,11 @@
     display: flex;
     margin-left: 10%;
     margin-right: 10%;
+<<<<<<< HEAD
     padding: 48px;
+=======
+    padding: 40px;
+>>>>>>> 353c46fc608a64708ee618afb351d37b5076842a
 }
 .nivel-1{
     border-radius: 5px;
@@ -173,7 +177,10 @@
 }
 /*inicio rodape*/
 .rodape{
+<<<<<<< HEAD
 
+=======
+>>>>>>> 353c46fc608a64708ee618afb351d37b5076842a
     background-color: #0033CC;
     height: 100px;
     align-items: center;
@@ -197,6 +204,7 @@
     justify-content: space-around;
     align-items: center;
     margin-right: 5%;
+<<<<<<< HEAD
 } */
 @media(max-width:1250px) {
     .niveis-easyclub {
@@ -216,3 +224,6 @@
         width: 90%;
     }
 }
+=======
+} */
+>>>>>>> 353c46fc608a64708ee618afb351d37b5076842a

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Easy Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="shortcut icon" href="../images/Logo da Easy.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-white navbar-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h1><img src="../images/Logo da Easy.png" alt="Logo do Easy Carros"></h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Nova Reserva</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Minhas Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Easy Club</a>
+                    </li>
+                </ul>
+                <li class="nav-item">
+                    <img src="/assets/images/Ícone login.svg" alt="ícone login">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+            </div>
+    </nav>
+<!--inicio da reserva de veículos-->
+    <div class="alugar-carro">
+        <div>
+            <h3 class="obj-1">
+                Faça sua reserva
+            </h3>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <input type="text" class="form-control" id="localRetirada" placeholder="Digite local de retirada">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <input type="time" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <button class="btn btn-success" onclick="continuar()">CONTINUE</button>
+</div>
+<!--inicio da descrição do programa Easy Club-->
+    <div class="apresentacao-do-programa">
+        <div class="logo-easyclub">
+            <img src="/assets/images/Logo Easy CLub.svg" alt="Logo do Programa Easy CLub">
+        </div>
+        <div class="programa-easy">
+            <h1> <strong class="titulo-destaque">Programa Easy Club</strong></h1>
+            <h2>Ao alugar seu carro com a Easy Carros você acumula pontos! Alugou, pontuou! Ah, e tem mais! Quanto mais pontos acumulados mais chances você tem de conquistar uma nova categoria com novos benefícios.</h2>
+        </div>
+    </div>
+</div>
+<!--inicio dos níveis do Easy Club-->
+<div class="niveis-easyclub">
+    <box class="nivel-1">
+        <li class="nivel-1-titulo">
+            <img src="/assets/images/logo nível 1.svg" alt="ícone nivel 1">
+        <h3 class="box-1">Recém habilitado</h3>
+        </li>
+        <li class="nivel-1-beneficio-1">
+            <img src="/assets/images/logo check.svg" alt="ícone check">
+            <h5 class="card-text">2% de cashback a cada 100km rodados</h5>
+        </li>
+        <li class="nivel-1-beneficio-2">
+            <img src="/assets/images/logo check.svg" alt="ícone check">
+            <h5 class="card-text">1 ponto a cada 5km rodados</h5>
+        </li>
+        <li class="nivel-1-beneficio-3">
+            <img src="/assets/images/logo check.svg" alt="ícone check">
+            <h5 class="card-text">3 horas de tolerância na devolução</h5>
+        </li>
+        <h5 class="nivel-1-obs">Do cadastro até 1500 pontos</h5>
+    </box>
+    <img src="/assets/images/logo próximo nível.svg" alt="ícone próximo nível">
+    <box class="nivel-2">
+        <li class="nivel-2-titulo">
+            <img src="/assets/images/logo nível 2.svg" alt="ícone nivel 2">
+        <h3 class="box-2">Mestre das curvas</h3>
+        </li>
+        <li class="nivel-2-beneficio-1">
+            <img src="/assets/images/logo check.svg" alt="ícone check">
+            <h5 class="card-text">6% de cashback a cada 100km rodados</h5>
+        </li>
+        <li class="nivel-2-beneficio-2">
+            <img src="/assets/images/logo check.svg" alt="ícone check">
+            <h5 class="card-text">2 ponto a cada 5km rodados</h5>
+        </li>
+        <li class="nivel-2-beneficio-3">
+            <img src="/assets/images/logo check.svg" alt="ícone check">
+            <h5 class="card-text">4 horas de tolerância na devolução</h5>
+        </li>
+        <h5 class="nivel-2-obs">A partir de 1501 pontos até 3000 pontos</h5>
+    </box>
+    <img src="/assets/images/logo próximo nível.svg" alt="ícone próximo nível">
+    <box class="nivel-3">
+        <li class="nivel-3-titulo">
+            <img src="/assets/images/logo nível 3.svg" alt="ícone nivel 3">
+        <h3 class="box-3">Piloto Profissional</h3>
+        </li>
+        <li class="nivel-3-beneficio-1">
+            <img src="/assets/images/logo check.svg" alt="ícone check">
+            <h5 class="card-text">10% de cashback a cada 100km rodados</h5>
+        </li>
+        <li class="nivel-3-beneficio-2">
+            <img src="/assets/images/logo check.svg" alt="ícone check">
+            <h5 class="card-text">6 horas de tolerância na devolução</h5>
+        </li>
+        <li class="nivel-3-beneficio-3">
+            <img src="/assets/images/logo check.svg" alt="ícone check">
+            <h5 class="card-text">1 diária grátis no anivérsário</h5>
+        </li>
+        <h5 class="nivel-3-obs">A partir de 1501 pontos até 3000 pontos</h5>
+    </box>
+</div>
+<!--Rodapé-->
+<div class="rodape">
+        <ul class="rodape-1">
+            <li><a href="#" style="color:white"><strong>Termos de uso</strong></a></li>
+            <li><a href="#" style= "color:white"><strong>Portal de privacidade</strong></a></li>
+            <li><a href="#" style= "color:white"><strong>Contato</strong></a></li>
+            <li><a href="#" style= "color:white"><strong>Configurações de cookies</strong></a></li>
+        </ul>
+        <ul class="rodape-2">
+            <p><strong>Easy Carros - todos os direitos reservados</strong></p>
+        </ul>
+<!--         <ul class="rodape-3">
+            <li><a href="#" style= "color:white"><strong>Configurações de cookies</strong></a></li>
+        </ul> -->
+</div>
+</body>
+</html>
